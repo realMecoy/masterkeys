@@ -7,5 +7,5 @@ export default defineConfig({
   integrations: [tailwind()],
   site: "https://realmecoy.github.io/masterkeys/",
   base: "masterkeys",
-  trailingSlash: "never",
+  // trailingSlash: "never",
 });

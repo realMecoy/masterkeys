@@ -79,7 +79,10 @@ import Logo from "../assets/master-keys-logo.jpg";
   navLinks.forEach((link) => {
     const navLinkPathname = new URL(link.href).pathname;
 
-    if (currentURL === navLinkPathname) {
+    if (
+      currentURL === navLinkPathname ||
+      (currentURL === "/" && navLinkPathname === "/")
+    ) {
       link.classList.add("active");
     }
   });
