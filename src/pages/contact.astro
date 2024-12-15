@@ -1,0 +1,303 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Whatsapp } from "simple-icons-astro";
+---
+
+<MainLayout
+  title="Master Keys"
+  seoTitle="Contact page, Master Keys"
+  seoDesc="Master Keys is a well established locksmith company in Cape Town, we cut keys, open cars, install locks, and more."
+>
+  <main
+    class="flex flex-col justify-center items-center min-h-screen gap-4 bg-black"
+  >
+    <div
+      class="contact flex flex-col md:flex-row justify-center items-center min-h-screen gap-4"
+    >
+      <div class="w-full p-6">
+        <h1 class="text-4xl lg:text-6xl pb-5 text-white">
+          Get in touch with us
+        </h1>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="text-2xl text-yellow-400">Emergency numbers</h3>
+            <p class="text-xl text-white">
+              083 258 7682
+              <Whatsapp class="w-5 h-w-5 text-green-600 inline" />
+            </p>
+            <p class="text-xl text-white">
+              083 281 0185
+              <Whatsapp class="w-5 h-w-5 text-green-600 inline" />
+            </p>
+          </div>
+          <hr class="h-px my-4 bg-green-500 border-2" />
+          <div>
+            <p class="text-2xl text-yellow-400">Goodwood</p>
+            <p class="text-xl text-white">021 591 1216</p>
+            <p class="text-xl text-white">
+              083 508 0331
+              <Whatsapp class="w-5 h-w-5 text-green-600 inline" />
+            </p>
+            <p class="text-xl text-white">collin@masterkeys.co.za</p>
+          </div>
+          <div>
+            <p class="text-2xl text-yellow-400">Cape Town CBD</p>
+            <p class="text-xl text-white">021 419 6880</p>
+            <p class="text-xl text-white">brem@planetpastel.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-8 w-full">
+        <div class="flex items-center min-h-screen">
+          <div class="container mx-auto">
+            <div class="max-w-md mx-auto my-10 p-5 rounded-md shadow-sm">
+              <div class="text-center">
+                <h2 class="my-3 text-3xl font-semibold text-white">
+                  Contact Us
+                </h2>
+                <p class="text-white">
+                  Fill up the form below to send us a message.
+                </p>
+              </div>
+              <div class="m-7">
+                <form
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
+                  id="form"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="becd6433-6da0-42aa-8a23-8c2cf55f5e4f"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="New Submission from Web3Forms"
+                  />
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    id=""
+                    style="display: none;"
+                  />
+
+                  <div class="mb-6">
+                    <label for="name" class="block mb-2 text-sm text-white"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="John Doe"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm text-white"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="you@company.com"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label for="phone" class="text-sm text-white"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="021 123 456"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label for="message" class="block mb-2 text-sm text-white"
+                      >Your Message</label
+                    >
+
+                    <textarea
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Your Message"
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                      required></textarea>
+                  </div>
+                  <div class="mb-6">
+                    <button
+                      type="submit"
+                      class="w-full px-3 py-4 text-white bg-yellow-500 rounded-md focus:bg-yellow-600 focus:outline-none"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                  <p class="text-base text-center text-gray-400" id="result">
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="find w-full flex justify-center flex-col items-center pb-12">
+      <div class="text-center">
+        <h3 class="my-3 text-3xl font-semibold text-white">Find Us</h3>
+        <p class="text-white mb-7">106 Voortrekker rd, Goodwood, Cape Town</p>
+      </div>
+      <iframe
+        class="w-1/2 h-[300px] sm:h-[450px] md:h-[600px] lg:h-[450px] xl:h-[600px]"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1190082385056!2d18.547291576167993!3d-33.91233652131579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5ba17cee716f%3A0xf854381be054f1c5!2s106%20Voortrekker%20Rd%2C%20Goodwood%20Estate%2C%20Cape%20Town%2C%207460!5e0!3m2!1sen!2sza!4v1731853567174!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="Map"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+</MainLayout>
+
+<style>
+  .invalid-feedback,
+  .empty-feedback {
+    display: none;
+  }
+
+  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+  }
+
+  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+  }
+
+  .is-invalid,
+  .was-validated :invalid {
+    border-color: #dc3545;
+  }
+
+  main {
+    min-height: 100vh;
+    background-image: url("../assets/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+<script is:inline>
+// use astro:page-load event if you are using View Transitions
+
+const form = document.getElementById("form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
+});
+
+  // document.addEventListener(
+  //   "DOMContentLoaded",
+  //   () => {
+  //     const form = document.getElementById("form");
+  //     const result = document.getElementById("result");
+
+  //     form.addEventListener("submit", function (e) {
+  //       e.preventDefault();
+  //       form.classList.add("was-validated");
+  //       if (!form.checkValidity()) {
+  //         form.querySelectorAll(":invalid")[0].focus();
+  //         return;
+  //       }
+  //       const formData = new FormData(form);
+  //       const object = Object.fromEntries(formData);
+  //       const json = JSON.stringify(object);
+
+  //       result.innerHTML = "Sending...";
+
+  //       fetch("https://api.web3forms.com/submit", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //           Accept: "application/json",
+  //         },
+  //         body: json,
+  //       })
+  //         .then(async (response) => {
+  //           let json = await response.json();
+  //           if (response.status == 200) {
+  //             result.classList.add("text-green-500");
+  //             result.innerHTML = json.message;
+  //           } else {
+  //             console.log(response);
+  //             result.classList.add("text-red-500");
+  //             result.innerHTML = json.message;
+  //           }
+  //         })
+  //         .catch((error) => {
+  //           console.log(error);
+  //           result.innerHTML = "Something went wrong!";
+  //         })
+  //         .then(function () {
+  //           form.reset();
+  //           form.classList.remove("was-validated");
+  //           setTimeout(() => {
+  //             result.style.display = "none";
+  //           }, 5000);
+  //         });
+  //     });
+  //   },
+  //   { once: true }
+  // );
+</script>

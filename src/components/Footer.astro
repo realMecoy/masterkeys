@@ -1,0 +1,39 @@
+---
+const year = new Date().getFullYear();
+import { Whatsapp } from "simple-icons-astro";
+---
+
+<footer
+  class="flex flex-col justify-evenly items-center py-4 bg-black text-lg mt-auto text-white"
+>
+  <div class="flex flex-col md:flex-row gap-4">
+    <div>
+      <p class="text-xl text-blue-400">Emergency numbers</p>
+      <p class="text-md text-white">083 258 7682</p>
+      <p class="text-md text-white">083 281 0185</p>
+    </div>
+    <hr class="h-px my-1 bg-green-500 border-2 md:hidden" />
+    <div>
+      <p class="text-xl text-blue-400">Goodwood</p>
+      <p class="text-md text-white">021 591 1216</p>
+      <p class="text-md text-white">
+        083 508 0331
+        <Whatsapp class="w-5 h-5 text-green-600 inline" />
+      </p>
+    </div>
+    <div>
+      <p class="text-xl text-blue-400">Cape Town CBD</p>
+      <p class="text-md text-white">021 419 6880</p>
+      <p class="text-md text-white">brem@planetpastel.com</p>
+    </div>
+  </div>
+  <small class="py-4"
+    >Copyright &copy; <span>{year}</span> | All rights reserved</small
+  >
+</footer>
+
+<style>
+  footer {
+    border-top: #fff 1px solid;
+  }
+</style>

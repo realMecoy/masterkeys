@@ -1,0 +1,25 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Features from "../components/Features.astro";
+---
+
+<MainLayout
+  title="Master Keys"
+  seoTitle="Services page, Master Keys"
+  seoDesc="Our services include maing number plates, cutting keys, installing locks, signage, stamps and more."
+>
+  <!-- <h1 class="text-6xl">Services page</h1> -->
+
+  <main class="flex flex-col justify-center items-center gap-6 m-4">
+    <Features />
+  </main>
+</MainLayout>
+<style>
+  main {
+    min-height: 100vh;
+    background-image: url("../assets/abloy-sentry-padlock.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+</style>

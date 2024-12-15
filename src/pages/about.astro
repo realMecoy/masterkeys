@@ -1,0 +1,74 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const d = new Date();
+const year = d.getFullYear();
+const age = year - 1998;
+---
+
+<MainLayout
+  title="Master Keys"
+  seoTitle="About page, Master Keys"
+  seoDesc="Master Keys is a well established locksmith company in Cape Town, we cut keys, open cars, install locks, and more."
+>
+  <div class="about">
+    <main class="flex flex-col items-center py-32">
+      <div class="flex flex-col justify-center items-center h-full">
+        <h1 class="text-4xl md:text-6xl mb-8 font-bold text-center">
+          About Master Keys Locksmiths
+        </h1>
+        <p class="px-8 my-0 md:w-1/2 text-lg font-bold">
+          Master Keys was established {age} years ago. It is a family controlled
+          business and we currently have 2 branches in the Western Cape
+          providing a 24 HOUR locksmithing service. <br />
+          <br /> As well as being the agents for Abloy in the Western Cape, we
+          also manufacture: rubber stamps, signs, number plates, including
+          cutting of all keys, sales and installation of mortice and surface
+          mounted locks, cars, houses, offices and safes opened and locks
+          changed.
+        </p>
+      </div>
+    </main>
+    <section class="flex flex-col items-center font-lobster pb-32">
+      <div class="flex flex-col justify-center items-center px-8 h-full w-3/4">
+        <h2 class="text-4xl lg:text-6xl text-center">THE LOCKSMITH'S CREED</h2>
+        <h3 class="text-2xl lg:text-3xl text-center py-4">
+          A Locksmith always remembers his public trust.
+        </h3>
+        <div class="px-8 my-0 md:w-1/2 text-lg lg:text-xl">
+          <p>
+            With him rests the security of property and fortune. As a public
+            guardian he shuns the dishonest, the wicked and the avaricious.
+          </p>
+          <br />
+          <p>
+            For thousands of years he and his predecessors have placed trust and
+            honor above temptation. His honesty is incorruptible. His allies are
+            the custodians of law and order.
+          </p>
+          <br />
+          <p>
+            He is an artist at his trade and the symbol of skill and integrity
+            to the world.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</MainLayout>
+<style>
+  .about {
+    min-height: 80vh;
+    background-image: url("../assets/vintage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /* section {
+    min-height: 80vh;
+    background-image: url("../assets/vintage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } */
+</style>

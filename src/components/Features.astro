@@ -1,0 +1,108 @@
+---
+import { Image } from "astro:assets";
+import Card from "./Card.astro";
+import Picks from "../assets/lock-pics.jpg";
+import CarKey from "../assets/car-key.jpg";
+import Stamp from "../assets/stamp.jpg";
+import Signs from "../assets/signage.png";
+
+const details = [
+  {
+    id: 1,
+    imgUrl: Picks,
+    alt: "Padlock",
+    title: "Locksmith Services ",
+    description:
+      "We cut keys while you wait, open cars, open safes,  install locks, and more. Locked out of your business or your house? Opening doors is what we do...",
+    badge_1: "Keys",
+    badge_2: "Locks",
+    badge_3: "Safes",
+    badge_4: "Commercial",
+    badge_5: "Residential",
+    badge_6: "Number Plates",
+  },
+  {
+    id: 2,
+    imgUrl: CarKey,
+    alt: "Pick set",
+    title: "Car Key Coding",
+    description:
+      "Lost your car key or your motor bike key or your truck key? Maybe you've lost all your keys, don't worry. We can help.",
+    badge_1: "VW",
+    badge_2: "Audi",
+    badge_3: "BMW",
+    badge_4: "Toyota",
+    badge_5: "Mercedes",
+    badge_6: "Hyundai",
+  },
+  {
+    id: 3,
+    imgUrl: Signs,
+    alt: "Pick set",
+    title: "Signage",
+    description:
+      "Want your signs to be seen everywhere? We can help. We also make stickers and small signs to meet your business requirements.",
+    badge_1: "Building Signs",
+    badge_2: "Outdoor Signs",
+    badge_3: "Indoor Signs",
+    badge_4: "Promotional",
+    badge_5: "Vehcile Branding",
+    badge_6: "Design",
+  },
+  {
+    id: 4,
+    imgUrl: Stamp,
+    alt: "Pick set",
+    title: "Stamps",
+    description:
+      "We do self inking stamps and lazer engraving. We sell ink pads and dater stamps to suit your needs.",
+    badge_1: "Dies",
+    badge_2: "Ink Pads",
+    badge_3: "Lazer Engraving",
+    badge_4: "Accessories",
+    badge_5: "Self Inking",
+    badge_6: "Wooden Stamps",
+  },
+];
+
+// const { id, imgUrl, title, description } = Astro.props;
+---
+
+<section>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+    {
+      details.map((detail) => (
+        <Card>
+          <Image
+            class="w-full h-60"
+            loading="eager"
+            src={detail.imgUrl}
+            alt={detail.alt}
+          />
+          <p class="py-3 pl-2 text-2xl text-gray-100">{detail.title}</p>
+          <p class="text-gray-100 text-base p-2 h-28">{detail.description}</p>
+          <div class="pt-4 flex flex-col justify-center items-center">
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2">
+              {detail.badge_1}
+            </span>
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2">
+              {detail.badge_2}
+            </span>
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2">
+              {detail.badge_3}
+            </span>
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              {detail.badge_4}
+            </span>
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              {detail.badge_5}
+            </span>
+            <span class="inline-block bg-gray-200 w-full text-center rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              {detail.badge_6}
+            </span>
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+</section>
