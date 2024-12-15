@@ -78,11 +78,7 @@ import Logo from "../assets/master-keys-logo.jpg";
   const currentURL = window.location.pathname;
   navLinks.forEach((link) => {
     const navLinkPathname = new URL(link.href).pathname;
-
-    if (
-      currentURL === navLinkPathname ||
-      (currentURL === "/" && navLinkPathname === "/")
-    ) {
+    if (currentURL === navLinkPathname) {
       link.classList.add("active");
     }
   });
