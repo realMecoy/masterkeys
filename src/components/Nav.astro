@@ -75,9 +75,11 @@ import Logo from "../assets/master-keys-logo.jpg";
 <script>
   const nav = document.querySelector(".navbar");
   const navLinks = nav.querySelectorAll("a");
-  const currentURL = window.location.href;
+  const currentURL = window.location.pathname;
   navLinks.forEach((link) => {
-    if (link.href === currentURL) {
+    const navLinkPathname = new URL(link.href).pathname;
+
+    if (currentURL === navLinkPathname) {
       link.classList.add("active");
     }
   });
